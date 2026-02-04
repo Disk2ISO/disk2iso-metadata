@@ -8,6 +8,7 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 ## [1.2.1] - 2026-02-04
 
 ### Added
+
 - Auslagerung als eigenständiges Modul aus disk2iso Core
 - Vollständige Dokumentation für Provider-Entwicklung
 - Cache-Management System mit TTL-Support
@@ -17,11 +18,13 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 - REST API Support
 
 ### Changed
+
 - Repository-Struktur für Standalone-Nutzung optimiert
 - Mehrsprachige Unterstützung (de, en, es, fr)
 - Konfigurationssystem verbessert
 
 ### Documentation
+
 - README mit vollständiger API-Dokumentation
 - Provider-Entwicklungs-Guide
 - Workflow-Diagramme und Beispiele
@@ -29,7 +32,8 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [1.2.0] - 2026-01-26
 
-### Added
+### Features
+
 - Initiale Version als Teil von disk2iso Core
 - Provider-System für MusicBrainz und TMDB
 - Cache-Verwaltung
@@ -38,6 +42,7 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 ---
 
 **Legende:**
+
 - `Added` - Neue Features
 - `Changed` - Änderungen an bestehenden Features
 - `Deprecated` - Features die bald entfernt werden

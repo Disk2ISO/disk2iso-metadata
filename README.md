@@ -37,7 +37,7 @@ metadata_apply_selected            # Wendet gewählte Metadaten an
 
 ### Workflow
 
-```
+```text
 1. Query Phase
    └─> Framework ruft query-Funktion aller Provider auf
        └─> Provider suchen nach Metadaten
@@ -55,7 +55,7 @@ metadata_apply_selected            # Wendet gewählte Metadaten an
 ## 🧩 Verfügbare Provider
 
 | Provider | Status | Beschreibung | Repository |
-|----------|--------|--------------|------------|
+| -------- | ------ | ------------ | ---------- |
 | [MusicBrainz](https://github.com/DirkGoetze/disk2iso-musicbrainz) | ✅ Stabil | Audio-CD Metadaten mit Disc-ID Lookup | [GitHub](https://github.com/DirkGoetze/disk2iso-musicbrainz) |
 | [TMDB](https://github.com/DirkGoetze/disk2iso-tmdb) | ✅ Stabil | Film-/TV-Metadaten mit Cover-Art | [GitHub](https://github.com/DirkGoetze/disk2iso-tmdb) |
 | Discogs | 🚧 Geplant | Erweiterte Audio-Metadaten | - |
@@ -100,6 +100,7 @@ METADATA_PROVIDER_TIMEOUT=30
 ```
 
 **Beschreibung:**
+
 - `METADATA_CACHE_DIR`: Verzeichnis für Metadaten-Cache
 - `METADATA_CACHE_TTL`: Cache-Gültigkeit in Sekunden
 - `METADATA_AUTO_APPLY`: Automatische Anwendung der ersten Treffer
@@ -114,12 +115,14 @@ metadata_register_provider <name> <query_func> <wait_func> <apply_func>
 ```
 
 **Parameter:**
+
 - `name`: Eindeutiger Provider-Name
 - `query_func`: Funktion für Metadaten-Suche
 - `wait_func`: Funktion für Nutzer-Auswahl
 - `apply_func`: Funktion zum Anwenden der Metadaten
 
 **Beispiel:**
+
 ```bash
 metadata_register_provider "tmdb" \
     "tmdb_query" \
@@ -207,6 +210,7 @@ Das Framework unterstützt 4 Sprachen:
 - 🇫🇷 **Französisch** (`lang/libmetadata.fr`)
 
 **Sprache ändern:**
+
 ```bash
 # In disk2iso.conf
 LANGUAGE="en"
@@ -288,7 +292,7 @@ MIT License - siehe [LICENSE](LICENSE) Datei.
 
 ## 👤 Autor
 
-**D. Götze**
+D. Götze
 
 ## 🙏 Danksagungen
 
