@@ -36,7 +36,7 @@ def get_cdtext_config():
     Returns:
         dict: Konfigurationswerte
     """
-    config = {
+    settings = {
         'CDTEXT_ENABLED': 'true',
         'CDTEXT_PRIORITY': 50
     }
@@ -70,16 +70,16 @@ echo "CDTEXT_PRIORITY=$PRIORITY"
                     # Konvertiere numerische Werte
                     if key == 'CDTEXT_PRIORITY':
                         try:
-                            config[key] = int(value)
+                            settings[key] = int(value)
                         except ValueError:
                             pass  # Behalte Default
                     else:
-                        config[key] = value
+                        settings[key] = value
     
     except Exception as e:
         print(f"Fehler beim Lesen der CD-TEXT Provider Config: {e}")
     
-    return config
+    return settings
 
 
 @cdtext_widget_settings_bp.route('/settings', methods=['GET'])
@@ -121,3 +121,4 @@ def register_blueprint(app):
         app: Flask Application Instanz
     """
     app.register_blueprint(cdtext_widget_settings_bp)
+

@@ -36,7 +36,7 @@ def get_metadata_config():
     Returns:
         dict: Konfigurationswerte
     """
-    config = {
+    settings = {
         'METADATA_SELECTION_TIMEOUT': 60,
         'METADATA_CACHE_ENABLED': 'true',
         'METADATA_CHECK_INTERVAL': 1,
@@ -76,16 +76,16 @@ echo "METADATA_DEFAULT_APPLY_FUNC=$APPLY_FUNC"
                     # Konvertiere numerische Werte
                     if key in ['METADATA_SELECTION_TIMEOUT', 'METADATA_CHECK_INTERVAL']:
                         try:
-                            config[key] = int(value)
+                            settings[key] = int(value)
                         except ValueError:
                             pass  # Behalte Default
                     else:
-                        config[key] = value
+                        settings[key] = value
     
     except Exception as e:
         print(f"Fehler beim Lesen der Metadata-Config: {e}")
     
-    return config
+    return settings
 
 
 @metadata_widget_settings_bp.route('/settings', methods=['GET'])
@@ -127,3 +127,4 @@ def register_blueprint(app):
         app: Flask Application Instanz
     """
     app.register_blueprint(metadata_widget_settings_bp)
+
