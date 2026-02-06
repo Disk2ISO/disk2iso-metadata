@@ -20,14 +20,14 @@ disk2iso/
 ├── www/
 │   ├── templates/
 │   │   └── widgets/
-│   │       └── metadata_widget_settings.html
+│   │       └── settings_4x1_metadata.html
 │   ├── static/
 │   │   └── js/
 │   │       └── widgets/
-│   │           └── metadata_widget_settings.js
+│   │           └── settings_4x1_metadata.js
 │   └── routes/
 │       └── widgets/
-│           └── metadata_widget_settings.py
+│           └── settings_metadata.py
 ```
 
 ### Integration in settings.html
@@ -37,13 +37,13 @@ disk2iso/
 <div id="metadata-settings-container"></div>
 
 <!-- JavaScript -->
-<script src="{{ url_for('static', filename='js/widgets/metadata_widget_settings.js') }}"></script>
+<script src="{{ url_for('static', filename='js/widgets/settings_4x1_metadata.js') }}"></script>
 ```
 
 ### Blueprint-Registrierung in app.py
 
 ```python
-from routes.widgets.metadata_widget_settings import metadata_widget_settings_bp
+from routes.widgets.settings_metadata import metadata_widget_settings_bp
 app.register_blueprint(metadata_widget_settings_bp)
 ```
 

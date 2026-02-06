@@ -1,11 +1,11 @@
 /**
- * Metadata Framework - Dependencies Widget (4x1)
+ * Dependencies Widget (4x1) - Metadata
  * Zeigt Metadata Framework Core-Tools (jq, curl)
  * Version: 1.0.0
  */
 
 function loadMetadataDependencies() {
-    fetch('/api/system')
+    fetch('/api/widgets/metadata/dependencies')
         .then(response => response.json())
         .then(data => {
             if (data.success && data.software) {

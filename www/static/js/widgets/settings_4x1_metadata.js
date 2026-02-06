@@ -1,8 +1,8 @@
 /**
  * ============================================================================
- * disk2iso - Metadata Widget Settings JavaScript
+ * disk2iso - Settings Widget (4x1) - Metadata
  * ============================================================================
- * Filepath: www/static/js/widgets/metadata_widget_settings.js
+ * Filepath: www/static/js/widgets/settings_4x1_metadata.js
  * 
  * Beschreibung:
  *   Client-seitiges JavaScript für das Metadata-Einstellungs-Widget

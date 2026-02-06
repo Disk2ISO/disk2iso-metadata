@@ -4,7 +4,7 @@
 ============================================================================
 disk2iso - CD-TEXT Provider Widget Settings Route
 ============================================================================
-Filepath: www/routes/widgets/cdtext_widget_settings.py
+Filepath: www/routes/widgets/settings_cdtext.py
 
 Beschreibung:
     Flask Blueprint für CD-TEXT Provider Einstellungs-Widget
@@ -98,7 +98,7 @@ def get_cdtext_settings_widget():
         config = get_cdtext_config()
         
         # Rendere Template
-        html = render_template('widgets/cdtext_widget_settings.html')
+        html = render_template('widgets/settings_4x1_cdtext.html')
         
         return jsonify({
             'success': True,

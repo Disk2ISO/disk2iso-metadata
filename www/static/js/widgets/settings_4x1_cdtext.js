@@ -1,8 +1,8 @@
 /**
  * ============================================================================
- * disk2iso - CD-TEXT Provider Widget Settings JavaScript
+ * disk2iso - Settings Widget (4x1) - CDText
  * ============================================================================
- * Filepath: www/static/js/widgets/cdtext_widget_settings.js
+ * Filepath: www/static/js/widgets/settings_4x1_cdtext.js
  * 
  * Beschreibung:
  *   Client-seitiges JavaScript für das CD-TEXT Provider Einstellungs-Widget

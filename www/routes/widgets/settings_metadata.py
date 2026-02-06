@@ -4,7 +4,7 @@
 ============================================================================
 disk2iso - Metadata Widget Settings Route
 ============================================================================
-Filepath: www/routes/widgets/metadata_widget_settings.py
+Filepath: www/routes/widgets/settings_metadata.py
 
 Beschreibung:
     Flask Blueprint für Metadata Framework Einstellungs-Widget
@@ -104,7 +104,7 @@ def get_metadata_settings_widget():
         config = get_metadata_config()
         
         # Rendere Template
-        html = render_template('widgets/metadata_widget_settings.html')
+        html = render_template('widgets/settings_4x1_metadata.html')
         
         return jsonify({
             'success': True,

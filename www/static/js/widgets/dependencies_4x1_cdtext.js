@@ -1,11 +1,11 @@
 /**
- * CD-Text Module - Dependencies Widget (4x1)
+ * Dependencies Widget (4x1) - CDText
  * Zeigt CD-Text Provider spezifische Tools (cd-info, icedax, cdda2wav)
  * Version: 1.0.0
  */
 
 function loadCdtextDependencies() {
-    fetch('/api/system')
+    fetch('/api/widgets/cdtext/dependencies')
         .then(response => response.json())
         .then(data => {
             if (data.success && data.software) {
