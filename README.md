@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform: Linux](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.debian.org/)
 [![Shell: Bash](https://img.shields.io/badge/Shell-Bash-green.svg)](https://www.gnu.org/software/bash/)
-[![Version](https://img.shields.io/badge/Version-1.2.1-blue.svg)](VERSION)
+[![Version](https://img.shields.io/badge/Version-1.3.0-blue.svg)](VERSION)
 
 ## ✨ Features
 
